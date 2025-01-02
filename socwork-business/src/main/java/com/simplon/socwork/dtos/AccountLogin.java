@@ -2,7 +2,7 @@ package com.simplon.socwork.dtos;
 
 import java.util.Objects;
 
-public record AccountCreate(String username, String password) {
+public record AccountLogin(String username, String password) {
 
 	@Override
 	public String toString() {
@@ -20,10 +20,10 @@ public record AccountCreate(String username, String password) {
 		if (this == obj) {
 			return true;
 		}
-		if (!(obj instanceof AccountCreate)) {
+		if (!(obj instanceof AccountLogin)) {
 			return false;
 		}
-		AccountCreate other = (AccountCreate) obj;
+		AccountLogin other = (AccountLogin) obj;
 		return Objects.equals(username, other.username);
 	}
 

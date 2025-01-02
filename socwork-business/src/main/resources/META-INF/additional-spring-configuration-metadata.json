@@ -1,5 +1,27 @@
-{"properties": [{
-  "name": "co.simplon.socwork.cors",
-  "type": "java.lang.String",
-  "description": "A description for 'co.simplon.socwork.cors'"
-}]}
+{"properties": [
+  {
+    "name": "co.simplon.socwork.cors",
+    "type": "java.lang.String",
+    "description": "A description for 'co.simplon.socwork.cors'"
+  },
+  {
+    "name": "co.simplon.socwork.BCrypt.rounds",
+    "type": "java.lang.String",
+    "description": "A description for 'co.simplon.socwork.BCrypt.rounds'"
+  },
+  {
+    "name": "co.simplon.socwork.jwt.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'co.simplon.socwork.jwt.secret'"
+  },
+  {
+    "name": "co.simplon.socwork.jwt.claims.exp",
+    "type": "java.lang.String",
+    "description": "A description for 'co.simplon.socwork.jwt.claims.exp'"
+  },
+  {
+    "name": "co.simplon.socwork.jwt.claims.iss",
+    "type": "java.lang.String",
+    "description": "A description for 'co.simplon.socwork.jwt.claims.iss'"
+  }
+]}

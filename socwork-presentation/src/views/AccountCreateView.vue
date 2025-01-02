@@ -2,7 +2,7 @@
     export default {
         data() {
             return {
-                formData: {
+                inputs: {
                     username: "",
                     password: ""
                 }
@@ -15,7 +15,7 @@
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(this.formData)
+                    body: JSON.stringify(this.inputs)
                 };
                 const response = await fetch('http://localhost:8080/accounts', options);
                 if(response.ok) {
@@ -35,11 +35,11 @@
         <form @submit.prevent="submit" novalidate>
             <div>
                 <label for="username">Nom d'utilisateur</label>
-                <input v-model="formData.username" type="text" name="username" id="username" placeholder="email"/>
+                <input v-model="inputs.username" type="text" name="username" id="username" placeholder="email"/>
             </div>
             <div>
                 <label for="password">Password</label>
-                <input v-model="formData.password" type="password" name="password" id="password" />
+                <input v-model="inputs.password" type="password" name="password" id="password" />
             </div>
             <input type="submit" value="Créer le compte" />
         </form>

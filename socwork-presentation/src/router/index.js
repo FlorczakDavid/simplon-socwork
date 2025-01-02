@@ -7,7 +7,12 @@ const router = createRouter({
       path: '/',
       alias: ['/index.html', '/creer-compte'],
       name: 'account-create',
-      component: () => import('../views/AccountCreateVue.vue'),
+      component: () => import('../views/AccountCreateView.vue'),
+    },
+    {
+      path: '/login',
+      name: 'account-login',
+      component: () => import('../views/AccountLoginView.vue'),
     },
     {
       path: '/:notFound',
